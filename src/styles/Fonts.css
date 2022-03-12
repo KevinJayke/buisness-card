@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "MDIO-Italic";
+  src: local("MDIO"), 
+  url("../assets/MDIO0.4-Italic.otf");
+  font-family: "MDIO-Bold";
+  src: local("MDIO"), 
+  url("../assets/MDIO0.4-Bold.otf");
+}
+
+
+body {
+    --font-main: "Poppins", sans-serif;
+    --font-secondary: "MD IO 0.4", Courier, monospace;
+}
+
+h1 {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+h2 {
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+h3 {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+button {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+}

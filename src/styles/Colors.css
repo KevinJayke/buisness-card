@@ -1,0 +1,32 @@
+body {
+    --color-main: #2B283A;
+    --color-light: #4A4E74;
+    --color-white: #FFF;
+    --color-secondary: #1CB1A8;
+}
+
+h1 {
+    color: var(--color-main);
+}
+
+h2 {
+    color: var(--color-secondary);
+}
+
+h3 {
+    color: var(--color-main);
+}
+
+button {
+    color: var(--color-white);
+    background: var(--color-secondary);
+    border: 2px solid var(--color-main);
+}
+
+p {
+    color: var(--color-light);
+}
+
+path {
+    fill:var(--color-main);
+}
