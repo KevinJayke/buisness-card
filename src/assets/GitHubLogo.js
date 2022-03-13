@@ -2,9 +2,8 @@ import React from "react";
 
 export default function GitHubLogo() {
   return (
+    <div className="logo">
     <svg
-      width="25"
-      height="20"
       viewBox="0 0 25 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -14,5 +13,6 @@ export default function GitHubLogo() {
         fill="#2B283A"
       />
     </svg>
+    </div>
   );
 }

@@ -2,11 +2,11 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="container__item">
+    <section className="about">
     <article>
       <h3>Qui suis-je ?</h3>
       <p>
-        Je suis un développeur FrontEnd 
+        Je suis un développeur Front End 
         curieux, créatif, ouvert à l’art et au
         web. J’adore me perfectionner dans le 
         domaine du numérique !
@@ -16,7 +16,7 @@ export default function About() {
     <h3>Mes centres d'intérêt</h3>
     <p>
       Amateur de romans graphiques, magicien, rôliste, 
-      graphiste et designer passionné !
+      graphiste et designer UI passionné !
     </p>
   </article>
   </section>

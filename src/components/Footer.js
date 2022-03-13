@@ -6,8 +6,8 @@ import LinkedinLogo from "../assets/LinkedinLogo";
 
 export default function Footer() {
   return (
-    <footer className="container__item" >
-        <DrrribleLogo />
+    <footer className="footer" >
+        <DrrribleLogo className="footer_logo" />
         <GitHubLogo />
         <LinkedinLogo />
     </footer>

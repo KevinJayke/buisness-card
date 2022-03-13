@@ -3,6 +3,8 @@ body {
     --color-light: #4A4E74;
     --color-white: #FFF;
     --color-secondary: #1CB1A8;
+    --color-secondary-dark: #127d76;
+    --color-secondary-darker: #0c4d49;
 }
 
 h1 {
@@ -17,7 +19,7 @@ h3 {
     color: var(--color-main);
 }
 
-button {
+.contact__button {
     color: var(--color-white);
     background: var(--color-secondary);
     border: 2px solid var(--color-main);
@@ -27,6 +29,11 @@ p {
     color: var(--color-light);
 }
 
+
 path {
-    fill:var(--color-main);
+    fill:var(--color-white);
+}
+
+.maillogo__path{
+fill: var(--color-white);
 }

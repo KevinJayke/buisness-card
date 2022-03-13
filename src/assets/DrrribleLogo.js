@@ -2,9 +2,8 @@ import React from "react";
 
 export default function DrrribleLogo() {
   return (
+    <div className="logo">
     <svg
-      width="25"
-      height="25"
       viewBox="0 0 25 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -14,5 +13,6 @@ export default function DrrribleLogo() {
         fill="#1A1B21"
       />
     </svg>
+    </div>
   );
 }
