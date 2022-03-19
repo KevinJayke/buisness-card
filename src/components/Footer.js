@@ -1,15 +1,15 @@
 import React from "react";
-import DrrribleLogo from "../assets/DrrribleLogo";
-import GitHubLogo from "../assets/GitHubLogo";
-import LinkedinLogo from "../assets/LinkedinLogo";
-
+import Logo from "../assets/Logo";
+import {logosData} from "../data/logosData";
 
 export default function Footer() {
-  return (
-    <footer className="footer" >
-        <DrrribleLogo className="footer_logo" />
-        <GitHubLogo />
-        <LinkedinLogo />
-    </footer>
-  );
+  const LogoElements = logosData.map(function (element, index) {
+    return <Logo 
+    key={index}
+    link={element.link} 
+    shape={element.shape} />;
+  });
+  console.log(LogoElements);
+  return <footer className="footer">{LogoElements}</footer>;
+
 }

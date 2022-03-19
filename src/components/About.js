@@ -1,24 +1,14 @@
 import React from "react";
+import { aboutData } from "../data/aboutData";
 
 export default function About() {
-  return (
-    <section className="about">
-    <article>
-      <h3>Qui suis-je ?</h3>
-      <p>
-        Je suis un développeur Front End 
-        curieux, créatif, ouvert à l’art et au
-        web. J’adore me perfectionner dans le 
-        domaine du numérique !
-      </p>
-    </article>
-    <article>
-    <h3>Mes centres d'intérêt</h3>
-    <p>
-      Amateur de romans graphiques, magicien, rôliste, 
-      graphiste et designer UI passionné !
-    </p>
-  </article>
-  </section>
-  );
+  const aboutMe = aboutData.map(function (info) {
+    return (
+      <article>
+        <h3>{info.title}</h3>
+        <p>{info.article}</p>
+      </article>
+    );
+  });
+  return <section className="about">{aboutMe}</section>;
 }

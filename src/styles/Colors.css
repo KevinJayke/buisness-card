@@ -1,39 +1,60 @@
+:root {
+  /* root colors values */
+
+  --color-main: #2b283a;
+  --color-light: #4a4e74;
+  --color-white: #fff;
+  --color-secondary: #1cb1a8;
+  --color-secondary-dark: #127d76;
+  --color-secondary-darker: #0c4d49;
+}
+
+[class*="theme"] {
+  /* theme default */
+
+  --border: 2px solid var(--color-main);
+  --bg-color: var(--color-white);
+  --h1-color: var(--color-main);
+  --h2-color: var(--color-secondary);
+  --h3-color: var(--color-main);
+  --buttonText-color: var(--color-white);
+  --buttonBg-color: var(--color-secondary);
+  --p-color: var(--color-light);
+  --path-color: var(--color-white);
+}
+
+.theme-test {
+  /* theme customize */
+--border: 4px double red;
+  --color-secondary: pink;
+}
+
 body {
-    --color-main: #2B283A;
-    --color-light: #4A4E74;
-    --color-white: #FFF;
-    --color-secondary: #1CB1A8;
-    --color-secondary-dark: #127d76;
-    --color-secondary-darker: #0c4d49;
+  background-color: var(--bg-color);
 }
 
 h1 {
-    color: var(--color-main);
+  color: var(--h1-color);
 }
 
 h2 {
-    color: var(--color-secondary);
+  color: var(--h2-color);
 }
 
 h3 {
-    color: var(--color-main);
+  color: var(--h3-color);
 }
 
-.contact__button {
-    color: var(--color-white);
-    background: var(--color-secondary);
-    border: 2px solid var(--color-main);
+button {
+  color: var(--buttonText-color);
+  background-color: var(--buttonBg-color);
+  border: var(--border);
 }
 
 p {
-    color: var(--color-light);
+  color: var(--p-color);
 }
-
 
 path {
-    fill:var(--color-white);
-}
-
-.maillogo__path{
-fill: var(--color-white);
+  fill: var(--path-color);
 }
